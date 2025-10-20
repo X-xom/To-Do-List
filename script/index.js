@@ -14,7 +14,7 @@ function addToDo() {
 
     listItem.innerHTML = `
         <span class="task-text">${taskText}</span>
-        <img src="/trash.svg" alt="Удалить" class="delete-btn">
+        <img src="./trash.svg" alt="Удалить" class="delete-btn">
     `;
 
     toDoList.appendChild(listItem);
