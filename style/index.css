@@ -1,0 +1,132 @@
+body {
+    background: #f3f4f6;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+
+.search {
+    height: 59px;
+    max-width: 689px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.search_input {
+    width: 519px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #a9a9a9;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    padding-left: 26px;
+}
+
+.search_input:not(:placeholder-shown) {
+    color: #333;
+}
+
+.search_add {
+    width: 143px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #000;
+}
+
+
+.todo-list {
+    max-width: 689px;
+    display: block;
+    justify-content: space-between;
+    margin: 0 auto
+}
+
+.todo-item {
+    display: flex;
+    border-radius: 12px;
+    height: 84px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 26px;
+}
+
+.task-text {
+    font-weight: 400;
+    font-size: 24px;
+    color: #333;
+    flex: 1;
+    cursor: pointer;
+
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    height: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .search {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search_input {
+        width: 100%;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .search_add {
+        width: 100%;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .todo-list {
+        width: 100%;
+    }
+
+    .todo-item {
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    .task-text {
+        font-size: 18px;
+    }
+
+    .delete-btn {
+        height: 20px;
+    }
+}
