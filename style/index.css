@@ -2,6 +2,9 @@ body {
     background: #f3f4f6;
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -22,7 +25,6 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 30px;
-    gap: 15px;
 }
 
 .search_input {
@@ -50,6 +52,9 @@ body {
     background: #000;
 }
 
+main {
+    flex: 1;
+}
 
 .todo-list {
     max-width: 689px;
@@ -87,6 +92,27 @@ body {
     font-weight: 700;
 }
 
+
+.copyright {
+    font-weight: 400;
+    font-size: 20px;
+    color: #6a7282;
+    text-align: center;
+    margin: 48px 0;
+}
+
+.search_add:hover {
+    background: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.todo-item:hover {
+    background: #f8f9fa;
+    transform: translateX(3px);
+    transition: all 0.2s ease;
+}
+
 @media (max-width: 767px) {
     body {
         padding: 0 15px;
@@ -99,6 +125,7 @@ body {
     .search {
         flex-direction: column;
         height: auto;
+        gap: 15px
     }
 
     .search_input {
@@ -128,5 +155,9 @@ body {
 
     .delete-btn {
         height: 20px;
+    }
+
+    .copyright {
+        margin: 40px;
     }
 }
